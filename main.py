@@ -2,7 +2,7 @@ from datetime import datetime
 
 
 def parse_json(initial_data: dict) -> list:
-    data_list = data.get('history')
+    data_list = initial_data.get('history')
     result_data = list()
 
     for operation in data_list:
